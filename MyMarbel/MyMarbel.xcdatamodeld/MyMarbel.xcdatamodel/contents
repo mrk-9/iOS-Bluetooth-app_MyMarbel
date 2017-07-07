@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Board" representedClassName=".Board" syncable="YES">
+        <attribute name="batteryChargeCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="batterySerialNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="boardID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="boardName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="circuitVersionNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deckVersionNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="firmwareVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lockStatus" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="mainSerialNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="motorVersionNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="odometer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentLockStatus" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="productionDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rideCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="wheelSize" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Ride" representedClassName=".Ride" syncable="YES">
+        <attribute name="boardID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="estimatedFinishStreet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="estimatedStartStreet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="humidity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rideID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rideName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tempF" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tripDistance" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tripDuration" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="ridePoints" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RidePoint" syncable="YES"/>
+    </entity>
+    <entity name="RidePoint" representedClassName=".RidePoint" syncable="YES">
+        <attribute name="accel" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="bleConnectionStrength" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="boardID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="current" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="elevation" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="errorFlag" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="esc1" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="esc2" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="internalTemperature" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="motorAmps1" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="motorAmps2" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="motorDirection1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="motorDirection2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="motorVolts1" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="motorVolts2" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="odometer" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="remote" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="remoteBatteryLife" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="remoteBLEConnection" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rideID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rpm1" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rpm2" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="throttle" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="voltage" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="voltage1" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="voltage2" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="voltage3" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="voltage4" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="voltage5" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="voltage6" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="voltage7" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="voltage8" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="voltage9" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="voltage10" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="wh" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brakingForce" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationEnable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="milesRidden" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notificationEnable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primaryRideStyle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rangeAlarm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reverseTurned" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="safetyBrake" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="terrain" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="units" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Board" positionX="-54" positionY="72" width="128" height="315"/>
+        <element name="Ride" positionX="-45" positionY="144" width="128" height="225"/>
+        <element name="RidePoint" positionX="-54" positionY="135" width="128" height="675"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="405"/>
+    </elements>
+</model>

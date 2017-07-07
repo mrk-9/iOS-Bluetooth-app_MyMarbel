@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+      
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.001264">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.000458">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: cert" time="12.725838">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: sigh" time="9.717245">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: gym" time="184.585811">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: crashlytics" time="18.178972">
+        
+          <failure message="/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/actions/actions_helper.rb:33:in `execute_action'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/runner.rb:182:in `block in execute_action'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/runner.rb:181:in `chdir'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/runner.rb:181:in `execute_action'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/runner.rb:107:in `trigger_action_by_name'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/fast_file.rb:140:in `method_missing'&#10;Fastfile:36:in `block (2 levels) in parsing_binding'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/lane.rb:33:in `call'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/lane.rb:33:in `call'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/runner.rb:50:in `block in execute'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/runner.rb:46:in `chdir'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/runner.rb:46:in `execute'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/lane_manager.rb:46:in `cruise_lane'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/command_line_handler.rb:30:in `handle'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/commands_generator.rb:51:in `block (2 levels) in run'&#10;/Library/Ruby/Gems/2.0.0/gems/commander-4.3.5/lib/commander/command.rb:178:in `call'&#10;/Library/Ruby/Gems/2.0.0/gems/commander-4.3.5/lib/commander/command.rb:178:in `call'&#10;/Library/Ruby/Gems/2.0.0/gems/commander-4.3.5/lib/commander/command.rb:153:in `run'&#10;/Library/Ruby/Gems/2.0.0/gems/commander-4.3.5/lib/commander/runner.rb:428:in `run_active_command'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane_core-0.48.1/lib/fastlane_core/ui/fastlane_runner.rb:26:in `run!'&#10;/Library/Ruby/Gems/2.0.0/gems/commander-4.3.5/lib/commander/delegates.rb:15:in `run!'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/commands_generator.rb:244:in `run'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/commands_generator.rb:20:in `start'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/lib/fastlane/cli_tools_distributor.rb:47:in `take_off'&#10;/usr/local/lib/fastlane_lib/bundle/lib/ruby/gems/2.2.0/gems/fastlane-1.97.2/bin/fastlane:5:in `&lt;top (required)&gt;'&#10;/usr/local/lib/fastlane_lib/bundle/bin/fastlane:22:in `load'&#10;/usr/local/lib/fastlane_lib/bundle/bin/fastlane:22:in `&lt;main&gt;'&#10;&#10;Shell command exited with exit status 1 instead of 0." />
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>
